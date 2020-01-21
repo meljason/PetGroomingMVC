@@ -24,5 +24,9 @@ namespace PetGrooming.Models
                 - A list of GroomServices
                 
         */
+        [Key]
+        public int groomBookingID { get; set; }
+        public DateTime groomBookingTime { get; set; }
+        public double price { get; set; }
     }
 }
