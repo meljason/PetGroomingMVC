@@ -23,5 +23,13 @@ namespace PetGrooming.Models
             
         */
 
+        [Key]
+        public int ownerID { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string address { get; set; }
+        public int workPhoneNumber { get; set; }
+        public int homePhoneNumber { get; set; }
+
     }
 }
