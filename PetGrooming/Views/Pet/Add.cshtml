@@ -3,12 +3,22 @@
     ViewBag.Title = "Add";
 }
 
-<h2>Add a New Pet</h2>
+<h2>Pet Information</h2>
 
 <form method="POST" action="/Pet/Add">
 
-    <span>Name:</span><input id="PetName" type="text" name="PetName"/> 
-    <span>Weight:</span><input id="PetWeight" type="text" name="PetWeight"/>
-    <input type="submit" value="Add Pet">
+    <div>
+        <span>Pet Name:</span><input id="PetName" type="text" name="PetName" />
+    </div>
+    <div>
+        <span>Weight:</span><input id="PetWeight" type="text" name="PetWeight" />
+    </div>
+    <div>
+        <span>Color:</span><input id="PetColor" type="text" name="PetColor" />
+    </div>
+    <div>
+        <span>Notes:</span><input id="PetNotes" type="text" name="PetNotes" />
+    </div>
+    <input type="submit" value="Subtmit and Continue">
 </form>
 
