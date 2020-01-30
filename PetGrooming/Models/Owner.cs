@@ -36,5 +36,13 @@ namespace PetGrooming.Models
         //Representing the "Many" in (Many Owners to Many Pets)
         public ICollection<Pet> Pets { get; set; }
 
+        [Key]
+        public int ownerID { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string address { get; set; }
+        public int workPhoneNumber { get; set; }
+        public int homePhoneNumber { get; set; }
+
     }
 }

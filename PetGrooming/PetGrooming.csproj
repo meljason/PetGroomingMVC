@@ -186,6 +186,10 @@
     <Compile Include="Migrations\202001301532066_initial.designer.cs">
       <DependentUpon>202001301532066_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001302100495_mystuff.cs" />
+    <Compile Include="Migrations\202001302100495_mystuff.designer.cs">
+      <DependentUpon>202001302100495_mystuff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\GroomBooking.cs" />
     <Compile Include="Models\Groomer.cs" />
@@ -297,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001301532066_initial.resx">
       <DependentUpon>202001301532066_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001302100495_mystuff.resx">
+      <DependentUpon>202001302100495_mystuff.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
