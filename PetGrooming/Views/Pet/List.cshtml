@@ -6,14 +6,18 @@
 
 <h2>List of Pets</h2>
 
+<a href="/Pet/New">Add New Pet</a>
+<a href="/Species/Add">Add New Species</a>
 @{ 
     foreach(var Pet in Model)
     {
-        <div>
-            <span><a href="/Pet/Show/@Pet.PetID">@Pet.PetName</a></span>
-            <span>@Pet.Species.Name</span>
-            <span>@Pet.Weight</span>
-            <span><a href="/Pet/Update/@Pet.PetID">Update</a></span>
-        </div>
+    <div>
+        <span><a href="/Pet/Show/@Pet.PetID">@Pet.PetName</a></span>
+        <span>@Pet.Species.Name</span>
+        <span>@Pet.Weight</span>
+        <span><a href="/Pet/Update/@Pet.PetID">Update</a></span>
+
+        <span><a href="/Pet/Delete/@Pet.PetID">Delete</a></span>
+    </div>
     }
 }
